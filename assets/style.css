@@ -212,3 +212,87 @@ body{
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
   
+  /*  creating explore menu section noww  */
+
+.best-sellers {
+  background: #f5f7fa;
+  padding: 50px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.best-sellers .title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.best-sellers .underline {
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background: #e4002b;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 10px;
+  position: relative;
+  width: 23%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.price-tag {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: #e4002b;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0% 50%);
+}
+
+.price-tag span {
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+.red-stripes {
+  height: 15px;
+  background: repeating-linear-gradient(
+    to right,
+    #e4002b,
+    #e4002b 10px,
+    white 10px,
+    white 15px
+  );
+  width: 60px;
+  margin: 0 auto 10px auto;
+}
