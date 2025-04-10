@@ -298,4 +298,111 @@ body{
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
   
+ /* top Deals section */
+ /* body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  padding-left: 200px;
+} */
+ .top-deals{
+    background-color: #f2f3f5;
+    padding: 40px 60px 20px;
+}
  
+
+.top-deals h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1a1a1a;
+  border-bottom: 4px solid #e4002b;
+  display: inline-block;
+  margin-bottom: 20px;
+ 
+}
+
+.deals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.deal-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.deal-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.deal-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.deal-image :hover{
+  transform: scale(1.2);
+}
+
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #e4002b;
+  cursor: pointer;
+}
+
+.deal-content h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.deal-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+  font-weight: bold;
+  color: #000;
+}
+
+.add-button {
+  background-color: #e4002b;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #b80022;
+}
+
+/* Responsive */
+/* @media (max-width: 768px) {
+  .deals-container {
+    flex-direction: column;
+    align-items: center;
+ }
+} */
