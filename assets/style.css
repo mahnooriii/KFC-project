@@ -325,18 +325,25 @@ body{
 .deals-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
 }
 
 .deal-card {
-  background-color: white;
+  /* background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 16px;
   width: 300px;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
+  background: white;
+  border-radius: 10px;
+  padding: 20px 10px;
+  position: relative;
+  width: 20%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .deal-image {
@@ -406,3 +413,84 @@ body{
     align-items: center;
  }
 } */
+
+
+ /* creating 4 cardss above footer  */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f4f8;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+ 
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card button {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+  background-color: #e4002b;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(35, 21, 21, 0.2);
+}
+
+/* Remove button for card3 (app download) */
+.card3 button {
+  display: none;
+}
+.explore-menu{
+  height: 50%;
+  width: 50%;
+}
+p{
+font-size: 14px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+text-align: center;
+padding-top: 30px;
+}
+.promo-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto;
+gap: 30px;
+max-width: 1200px;
+margin: 60px auto;
+padding: 0 20px;
+}
