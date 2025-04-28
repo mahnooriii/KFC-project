@@ -559,8 +559,8 @@ padding: 0 20px;
 
 /* ----------------responsive-------------- */
 /* ---------------media queries for mobile--------------------- */
- @media only screen and (min-width:240px) and (max-width:767px){}
-
+ @media only screen and (min-width:240px) and (max-width:767px){
+/* @media (max-width: 600px) */
 /* -------------navbar-------- */
 .navbar{
   display: flex;
@@ -1048,3 +1048,5 @@ bottom: 10px;
     position: relative;
     left: 60%;
   }
+
+}
