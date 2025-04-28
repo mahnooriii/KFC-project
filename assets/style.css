@@ -1,15 +1,20 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
+
+
+/* -------------navbar-------- */
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items:center;
     padding: 30px 90px 0px 90px;
     border-bottom: 1px solid #eee;
+    background-color:white;
+    ;
 
-    
 }
 .left-section{
     display: flex;
@@ -26,6 +31,7 @@ body{
 
 .kfc-logo{
     height: 52px;
+    cursor: pointer;
 
 }
 .nav-buttons{
@@ -35,7 +41,7 @@ body{
 .nav-btn{
     padding: 8px 15px;
     border: 2px solid transparent;
-    background-color: #f8f8f8;
+    background-color: #f2f4f8;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -89,7 +95,75 @@ body{
       
 }
 
- /*  creating best sellers section noww  */
+/* -----------------------creating explore-menu section -----------------------*/
+.explore-menu{
+  background:#f2f4f8;
+  text-align: center;
+  padding: 50px;
+}
+
+.explore-menu h2{
+   font-weight: bold;
+   position: relative;
+   font-size: 28px;
+   text-align: left;
+   left: 30px;
+   margin-bottom: 20px;
+}
+.explore-menu .underline{
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background: #e4002b;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.menu-carousel{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+
+}
+
+
+ .menu-card{
+  background: white;
+  padding: 20px 30px;
+  width: 20%;
+  text-align: center ;
+  border-radius:40% ;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* margin-right: 20px; */
+  transition: ease-in-out 0.3s ease;
+}
+.menu-card :hover{
+  transform: scale(1.2);
+
+}
+
+
+.menu-card img{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  
+}
+
+
+.menu-card p{
+  margin: 0; 
+   font-weight: 800;
+   font-size: 12px;
+}
+
+
+ /*  ---------------creating best sellers section --------------- */
 
  .best-sellers {
   background: #f5f7fa;
@@ -97,6 +171,7 @@ body{
   text-align: center;
   font-family: sans-serif;
 }
+
 
 .best-sellers .title {
   font-size: 28px;
@@ -118,17 +193,19 @@ body{
 
 .cards-container {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
 .product-card {
+  flex: 0 0 auto;
   background: white;
   border-radius: 10px;
-  padding: 20px 10px;
+  padding: 20px 30px;
   position: relative;
-  width: 23%;
+  width: 20%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -173,17 +250,13 @@ body{
   width: 60px;
   margin: 0 auto 10px auto;
 }
+/* -------------foooter-------------- */
 
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
 .kfc-footer{
-    background-color: #f2f3f5;
-    padding: 40px 60px 20px;
-}
+  background-color: #f2f3f5;
+  padding: 50px;
+  text-align: center;}
 
 .footer-links{
     display: flex;
@@ -192,7 +265,6 @@ body{
 }
 .footer-links ul{
     list-style: none;
-    /* padding: 0; */
 }
 .footer-links ul li{
     margin-bottom: 10px;
@@ -257,6 +329,8 @@ body{
     text-align: right;
     color: #e4002a;
     font-weight: bold;
+    position: relative;
+    right: 10%;
   }
   
   .footer-bottom a {
@@ -265,6 +339,8 @@ body{
     text-decoration: underline;
     color: #000;
   }
+
+  /* -------------main-img----------- */
   .image .main-image{
     padding: 0;
     margin: 0;
@@ -274,6 +350,7 @@ body{
 }
 
 .reorder-btn {
+  background-color: #f2f4f8;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -298,57 +375,56 @@ body{
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
   
- /* top Deals section */
- /* body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 20px;
-  padding-left: 200px;
-} */
+ /* -----------------top Deals section ---------------*/
+
+
  .top-deals{
     background-color: #f2f3f5;
-    padding: 40px 60px 20px;
+    padding: 50px;
+    text-align: center;
 }
  
 
 .top-deals h2 {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
+  text-align: left;
   color: #1a1a1a;
-  border-bottom: 4px solid #e4002b;
-  display: inline-block;
+  border-bottom: 20px ;
+ position: relative;
   margin-bottom: 20px;
- 
+}
+.top-deals .underline{
+
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background: #e4002b;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 .deals-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .deal-card {
-  /* background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  width: 300px;
-  position: relative;
-  display: flex;
-  flex-direction: column; */
   background: white;
   border-radius: 10px;
   padding: 20px 10px;
   position: relative;
-  width: 20%;
+  width: 23%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .deal-image {
+  width: 100%;
+  height: auto;
   position: relative;
-  overflow: hidden;
   border-radius: 10px;
 }
 
@@ -367,8 +443,12 @@ body{
   top: 10px;
   right: 10px;
   font-size: 30px;
-  color: #e4002b;
   cursor: pointer;
+
+}
+.heart-icon:hover{
+  color: #e4002b;
+
 }
 
 .deal-content h3 {
@@ -406,40 +486,17 @@ body{
   background-color: #b80022;
 }
 
-/* Responsive */
-/* @media (max-width: 768px) {
-  .deals-container {
-    flex-direction: column;
-    align-items: center;
- }
-} */
 
 
- /* creating 4 cardss above footer  */
 
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+ /*-------------- creating 4 cardss above footer --------------- */
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f4f8;
-}
 
-.promo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
-  padding: 40px;
-}
 
 .card {
-  position: relative;
   border-radius: 16px;
   overflow: hidden;
-  background-color: white;
+  background-color: #f2f3f5;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   cursor: pointer;
  
@@ -474,7 +531,7 @@ body {
 .card3 button {
   display: none;
 }
-.explore-menu{
+.explore{
   height: 50%;
   width: 50%;
 }
@@ -494,3 +551,500 @@ max-width: 1200px;
 margin: 60px auto;
 padding: 0 20px;
 }
+.btn-expo{
+  position: absolute;
+  padding-bottom: ;
+}
+
+
+/* ----------------responsive-------------- */
+/* ---------------media queries for mobile--------------------- */
+ @media only screen and (min-width:240px) and (max-width:767px){}
+
+/* -------------navbar-------- */
+.navbar{
+  display: flex;
+  align-items:start;
+  padding: 2px;
+
+}
+.left-section{
+  display: contents;
+  
+  gap: 1rem;
+}
+
+.menu-icon .menu{
+  height: 20px;
+  width: 30px;
+ 
+}
+
+.kfc-logo{
+  height: 40px;
+
+}
+.nav-buttons{
+ padding-top: 100px;
+ text-align: left;
+
+}
+.nav-btn{
+  /* padding: 8px 15px; */
+ 
+  background-color: #f8f8f8;
+  display: contents;
+  align-items:start;
+   gap: 1rem;
+  
+  font-size: 12px;
+ 
+
+}
+.nav-btn img.icon{
+  height: 25px;
+}
+.nav-buttons  :hover{
+  border: 3px solid rgb(177, 51, 51);
+  background-color: white;
+  margin-top: -10px;
+  cursor:pointer;
+}
+.right-section{
+   display: contents;
+}
+
+.cart-icon{
+  height: 35px;
+  padding-top: 10px
+}
+.cart-count{
+/* position: relative; */
+
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  /* padding:2px 6px ; */
+  border-radius: 50px;
+}
+.login-btn{
+  position: relative; 
+  top: 15px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+ /* -------------main-img----------- */
+ .image .main-image{
+ 
+  width: 100%;
+  height: auto;
+}
+
+
+.reorder-btn button {
+  padding: 10px 100px 10px;
+  font-size: 12px;
+
+}
+
+/* -----------------------creating explore-menu section -----------------------*/
+.explore-menu{
+  background:#f2f4f8;
+  text-align: center;
+  padding: 20px;
+}
+
+.explore-menu h2{
+   position: relative;
+   font-size: 15px;
+   left: 10px;
+   font-weight: 900;
+   
+}
+.explore-menu .underline{
+  width: 50px;
+  height: 3px;
+ 
+}
+
+.menu-carousel{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding:0;
+  scroll-snap-type: x mandatory;
+
+}
+
+
+ .menu-card{
+  flex: 0 0 auto;
+  background: white;
+  padding: 5px 70px;
+  text-align: center ;
+  border-radius:40% ;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* position: relative; */
+  /* margin-right: 20px; */
+  transition: ease-in-out 0.3s ease;
+}
+.menu-card :hover{
+  transform: scale(1.2);
+
+}
+
+.menu-card .expo{
+  position: relative;
+}
+
+.menu-card img{
+  right: 30px;
+  width: 150px;
+  height: auto;
+  align-items: center;
+
+ margin-top: 20px;
+  cursor: pointer;
+  
+}
+
+
+ /*  ---------------creating best sellers section --------------- */
+
+ .best-sellers {
+  
+  padding: 20px;
+ 
+}
+
+
+.best-sellers .title {
+  font-size: 15px;
+  font-weight: 900;
+  
+}
+
+.best-sellers .underline {
+  width: 50px;
+  height: 3px;
+  
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  padding:0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 60px;
+  position: relative;
+  width: 20%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.product-card img {
+  position: relative;
+  right: 40px;
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.price-tag {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  background: #e4002b;
+  color: white;
+  padding: 2px 10px;
+  font-weight: bold;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0% 50%);
+}
+
+.price-tag span {
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+.red-stripes {
+  height: 15px;
+  background: repeating-linear-gradient(
+    to right,
+    #e4002b,
+    #e4002b 10px,
+    white 10px,
+    white 15px
+  );
+  width: 44px;
+  margin: 0 auto 10px auto;
+}
+
+
+
+/* -----------------top Deals section ---------------*/
+
+
+.top-deals{
+  padding: 30px;
+  
+}
+
+
+.top-deals h2 {
+font-size: 17px;
+font-weight:900;
+
+}
+.top-deals .underline{
+width: 50px;
+height: 3px;
+
+}
+
+.deals-container {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+padding: 0;
+gap: 1rem;
+}
+
+.deal-card {
+  flex: 0 0 auto;
+background: white;
+border-radius: 10px;
+padding: 10px 60px;
+position: relative;
+width: 20%;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+.deal-image {
+  position: relative;
+  right: 30px;
+  top: 20px;
+width: 150px;
+height: auto;
+position: relative;
+border-radius: 10px;
+}
+
+.deal-image img {
+width: 100%;
+border-radius: 10px;
+transition: transform 0.3s ease;
+}
+.deal-image :hover{
+transform: scale(1.2);
+}
+
+
+.heart-icon {
+position: absolute;
+right: 10px;
+font-size: 30px;
+cursor: pointer;
+
+}
+.heart-icon:hover{
+color: #e4002b;
+
+}
+
+.deal-content h3 {
+font-size: 15px;
+margin: 50px 0 5px;
+font-weight: 900;
+}
+
+.deal-content p {
+text-overflow:clip;
+font-size: 14px;
+color: #343434;
+margin-bottom: 8px;
+}
+
+.price {
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 15px;
+font-weight: bold;
+color: #000;
+}
+
+.add-button {
+background-color: #e4002b;
+color: white;
+padding: 1px 50px;
+border: none;
+border-radius: 5px;
+
+
+transition: background 0.3s ease;
+}
+
+.add-button:hover {
+background-color: #b80022;
+}
+
+
+
+
+
+ /*-------------- creating 4 cardss above footer --------------- */
+
+
+
+ .card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f2f3f5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+ 
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card button {
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+  background-color: #e4002b;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 10px rgba(35, 21, 21, 0.2);
+}
+
+/* Remove button for card3 (app download) */
+
+.promo-grid {
+display: flex;
+flex-direction: column;
+}
+
+/* -------------foooter-------------- */
+
+
+.kfc-footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer-links{
+  text-align: center;
+  flex-direction: column;
+    display: flex;
+    top: 20px;
+    flex: 0;
+    gap: 10px;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links ul li{
+    margin-bottom: 10px;
+}
+.footer-links ul li a{
+    color: #000;
+    text-decoration: none; 
+    font-size: 16px;
+}
+.footer-center{
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+.footer-logo{
+  width: 150px;
+    height:auto;
+    /* margin-bottom: 20px; */
+    padding: 0px 50px 10px 60px;
+    margin-top: -40px;
+}
+.social-icons{
+position: relative;
+left: 10px;
+bottom: 10px;
+}
+.social-icons a img{
+  
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    vertical-align: middle;
+    border-radius: 50px;
+    background-color: white;
+    padding: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.app-links{
+    display: flex;
+    /* flex-direction: row; */
+    align-items:flex-end;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.app-links a img{
+    width: 120px;
+    margin: 10px 10px 0 0;
+    height: 40px;
+    max-width: 150px;
+}
+
+.footer-bottom {
+  flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom .powered {
+    text-align: right;
+    color: #e4002a;
+    font-weight: bold;
+    position: relative;
+    right: 50%;
+  }
+  
+  .footer-bottom a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: #000;
+    position: relative;
+    left: 60%;
+  }
