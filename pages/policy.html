@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy and Policy</title>
+</head>
+<body>
+
+    <style>
+      
+        
+        
+/* -------------navbar-------- */
+
+
+.navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 90px 0px 90px;
+
+
+    border-bottom: 1px solid #eee;
+    background-color:white;
+    ;
+
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* -----menu sideBar----- */
+#openSidebar {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+   border-style: none;
+   background-color: white;
+}
+ .menu-icon{
+    cursor: pointer;
+}
+.menu-icon .menu{
+    height: 30px;
+    width: 35px;
+} 
+
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 1000;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0; left: -400px;
+  width: 250px;
+  height: 100%;
+  background: #f1f2f4;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1001;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#overlay.active {
+  display: block;
+}
+
+.login-button {
+  display: block;
+  background: #e4002b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+
+}
+.login-btn :hover{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-wrapper {
+  margin: 20px 0;
+}
+
+.toggle {
+  background: white;
+  border-radius: 20px;
+  display: inline-flex;
+  padding: 4px;
+  gap: 10px;
+}
+
+.toggle span {
+  padding: 5px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.toggle .day.active {
+  background: #e4002b;
+  color: white;
+}
+
+.toggle .night {
+  color: #333;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+.icon-links {
+  gap: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  margin: 10px 10px; 
+  text-align: left;
+}
+.icon-links li{
+  margin-bottom: 15px;
+}
+.icon-links a{
+  text-decoration: none;
+  color: black;
+}
+.icon-links :hover{
+  background-color: #c6c1c1;
+  transition: 0.2s ease-in;
+  font-size: 20px;
+
+}
+
+.icon-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-link span {
+  font-weight: bold;
+}
+
+.nav-links {
+  /* justify-content: space-between;
+  gap: 20px; */
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+.nav-links li{
+  margin-bottom: 15px;
+}
+.nav-links :hover{
+  background-color: #c6c1c1;
+  transition: 0.2s ease-in;
+  font-size: 19px;
+
+  transform:translate(00.5s) ; 
+ }
+
+.nav-links li {
+  /* margin-bottom: 20px; */
+  margin: 10px ;
+  cursor: pointer;
+}
+/* ----------------- */
+
+.kfc-logo{
+    height: 52px;
+    cursor: pointer;
+    position: relative;
+    left:-40px;
+
+}
+.nav-buttons{
+    display: flex;
+    gap: 10px;
+}
+.nav-btn{
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    background-color: #f2f4f8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.nav-btn img.icon{
+    height: 25px;
+}
+.nav-buttons  :hover{
+    border: 3px solid rgb(177, 51, 51);
+    background-color: white;
+    margin-top: -10px;
+    cursor:pointer;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cart{
+    position: relative;
+}
+.cart-icon{
+    height: 40px;
+}
+.cart-count{
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding:2px 6px ;
+    border-radius: 50px;
+}
+.login-btn{
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ .login-btn:hover {
+   
+ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      
+}
+
+
+
+        body{
+            text-align: center;
+            justify-content: center;
+            /* padding: 50px; */
+            background-color: #f1f2f4;
+
+        }
+        .section{
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 70%;  
+            position: relative;
+            left: 30px;
+        }
+
+        h3{
+            font-size: 12px;
+            font-weight: 200;
+            color: #606060;
+        }
+        p{
+            text-align: left;
+            color: #606060;
+            max-width: 800px;
+            font-weight: 400;
+            padding: 20px;
+            justify-content: center;
+            
+        }
+        h2{
+            text-align: left;
+            font-size: 18px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            font-weight: 600;
+        }
+        ul li{
+            text-align: left;
+            color: #4f4f4f;
+            max-width: 800px;
+            font-weight: 400;
+            justify-content: center;
+        }
+
+
+    /* -------------foooter-------------- */
+
+
+.kfc-footer{
+  background-color: #f2f3f5;
+  text-align: center;
+  justify-content: space-between;
+  align-items:center;
+  padding: 40px 100px 0px 100px;
+
+}
+
+.footer-links{
+    display: flex;
+    flex: 1;
+    gap: 200px;
+}
+.footer-links ul{
+    list-style: none;
+    /* word-break: keep-all; */
+
+}
+.footer-links ul li{
+    margin-bottom: 10px;
+    word-break: keep-all;
+    white-space: nowrap;
+
+
+}
+.footer-links ul li a{
+    color: #000;
+    text-decoration: none; 
+    font-size: 16px;
+}
+.footer-center{
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+    display: flex;
+    padding-left: 500px;
+}
+.footer-logo{
+    height: 100px;
+    /* margin-bottom: 20px; */
+    padding: 0px 50px 10px 30px;
+    margin-top: -40px;
+}
+.social-icons a img{
+  
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    vertical-align: middle;
+    border-radius: 50px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.app-links{
+    display: flex;
+    /* flex-direction: row; */
+    align-items:flex-end;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.app-links a img{
+    width: 120px;
+    margin: 10px 10px 0 0;
+    height: 40px;
+    max-width: 150px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom .powered {
+    text-align: right;
+    color: #e4002a;
+    font-weight: bold;
+    position: relative;
+    right: 10%;
+  }
+  
+  .footer-bottom a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: #000;
+  }    
+    
+    </style>
+
+
+
+
+
+<!-- ----------------NavBar---------------------- -->
+
+<nav class="navbar">
+    <div class="left-section">
+<!--------- menuu sidebar ------------>
+<!-- Toggle Button -->
+<button id="openSidebar">
+<div class="menu-icon"><img src="https://static.thenounproject.com/png/345386-200.png"  alt="menu" class="menu"></div>
+
+</button>
+
+<!-- Sidebar Overlay -->
+<div id="overlay"></div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+<button class="login-button">LOGIN</button>
+
+<!-- Day/Night Toggle -->
+<div class="toggle-wrapper">
+<div class="toggle">
+  <span class="day active">Day</span>
+  <span class="night">Night</span>
+</div>
+</div>
+
+<hr />
+
+<!-- Icon Buttons -->
+<!-- <div class="icon-links"> -->
+<!-- Icon Buttons -->
+<ul class="icon-links">
+<li><a href="#"><i class="fa-solid fa-location" style="color: #cf3a3a;"></i> Store Locator</a></li>
+<li><a href="#"><i class="fa-solid fa-pizza-slice" style="color: #cf3a3a;"></i> Track Order</a></li>
+<li><a href="#"><i class="fa-solid fa-person-digging" style="color: #d33636;"></i> Explore Menu</a></li>
+</ul>
+
+
+<!-- </div> -->
+
+<hr />
+
+<!-- Text Links -->
+<ul class="nav-links">
+<li>About Us</li>
+<li>FeedBack</li>
+<a href="./Terms.html"><li>Terms & Conditions</li></a>
+<a href="./policy.html"><li>Privacy Policy</li></a>
+<li>Contact Us</li>
+<li>Mitao Bhook</li>
+<li>Mitao Bhook - Scholarship</li>
+<li>Careers</li>
+</ul>
+</div>
+
+        <!-- <div class="menu-icon"><img src="https://static.thenounproject.com/png/345386-200.png"  alt="menu" class="menu"></div> -->
+       <a href="../index.html"><img  href="../index.html" src="https://www.pngplay.com/wp-content/uploads/9/KFC-Logo-PNG-Free-File-Download.png" alt="kfc logo" class="kfc-logo"></a>
+   <div class="nav-buttons">
+    <button class="nav-btn ">
+    <img src="https://www.kfcpakistan.com/static/media/Delivery.793adbaa710baf75ba78.png" alt="Delivery" class="icon">DELIVERY
+    </button>
+    <button class="nav-btn"> 
+        <img src="https://www.kfcpakistan.com/static/media/pickup.47bb874f83ea6acb5a47.png" alt="pickup" class="icon">PICKUP
+    </button>
+   </div>  
+    </div>
+   <div class="right-section">
+    <div class="cart">
+        <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt="cart" class="cart-icon">
+        <span class="cart-count">0</span>
+        
+    </div>
+    <button class="login-btn">LOGIN</button>
+   </div>
+</nav>
+
+
+
+
+
+
+    <div class="section">
+    <h1>Privacy Policy</h1>
+    <div class="top"></div>
+    <h3>KFC CORPORATION PRIVACY POLICY — YOUR PRIVACY RIGHTS <br>
+
+        EFFECTIVE DATE: JUNE 9, 2014</h3>
+    <h2>THIS PRIVACY POLICY APPLIES TO THE SITES</h2>
+    <p>This Policy describes how we treat personal information both online and offline. This includes on our websites. It also includes in phone or email interactions you have with us.</p>
+    
+     
+    <div class=" COLLECT INFORMATION ">
+    <h2>WE COLLECT INFORMATION FROM AND ABOUT YOU</h2>
+    <ul>
+        <li>Contact information. For example, we might collect your name and street address. We might also collect your phone number or email address.</li>
+        <li>Payment and billing information. For example, we collect your credit card number and zip code when you buy one of our products. Information you submit or post. If you post content, apply for a job, or respond to a survey, we will collect the information you provide to us.</li>
+        <li>Demographic information. We may collect information about our services you like or products you buy. We might collect this as part of a survey, for example.</li>
+        <li>Other information. If you use our website, we may collect information about your computer location or the browser you're using. We might look at what site you came from, or what site you visit when you leave us.</li>
+    </ul>
+    </div>
+   
+    <div class="INFORMATION AS DISCLOSED">
+        <h2>WE USE INFORMATION AS DISCLOSED AND DESCRIBED HERE</h2>
+        <ul>
+            <li>We use information to respond to your requests or questions. For example, we might use your information to confirm your registration for a program or contest, or fulfill prizes or premiums in a promotion. We may use your friend's email address if you send them features on our site.</li>
+            <li>We use information to improve our products and services. We might use your information to customize your experience with us. We may use your information to make our website and products better.</li>
+            <li>We use information to look at site trends and customer interests. We may use your information to make our website and products better. We may combine information we get from you with information about you we get from third parties.</li>
+            <li>We use information for security purposes. We may use information to protect our company, our customers, or our websites. For example, in the event of a breach, we may use your contact information to contact you about that incident.</li>
+            <li>We use information for marketing purposes. For example, we might send you information about special promotions or offers. We might also tell you about new features or products. These might be our own offers or products, or third-party offers or products we think you might find interesting. To learn about your choices for these communications, read the choices section below.</li>
+            <li>We use information to send you transactional communications. For example, we might send you emails about a purchase you made with us. We might also contact you about this policy or our website terms.</li>
+            <li>We use information as otherwise permitted by law.</li>
+        </ul>
+    </div>
+
+    <div class="CERTAIN CHOICES">
+        <h2>YOU HAVE CERTAIN CHOICES ABOUT HOW WE USE YOUR INFORMATION
+        </h2>
+        <ul>
+            <li>You can opt out of receiving our marketing emails. To stop receiving our promotional emails, send a request to customercare@kfcpakistan.com or follow the instructions in any promotional message you get from us. It may take about ten (10) days to process your request. Don't worry! Even if you opt out of getting marketing messages, we will still be sure to send you transactional messages. For example, we may still contact you about your orders.</li>
+            <li>You can control if we share information with third parties for their marketing purposes. To opt out of having us share your information with third parties for their promotional purposes, click here .</li>
+        </ul>
+    </div>
+
+    <div class="UPDATED OR DELETED">
+        <h2>YOU CAN GET YOUR ACCOUNT INFORMATION UPDATED OR DELETED
+        </h2>
+        <ul>
+            <li>Any information that you want us to change or delete, for instance, your email address, can be requested by you. These requested changes will be made only after your consent, and we will update you regarding them. For any such requests you can always contact us on our support email i.e. customercare@kfcpakistan.com.</li>
+            <li>If you want to delete your Facebook social login account from KFC Web & Apps, you can remove your information by following these steps:
+                <li>Go to your Facebook Account’s Setting & Privacy. Click “Settings”.
+                </li>
+                <li>Look for “Apps and Websites” and you will see all of the apps and websites you linked with your Facebook.
+                </li>
+                <li>Search and Click “KFC” in the search bar.
+                </li>
+                <li>Scroll and click “Remove”.
+                </li>
+                <li>Congratulations, you have successfully removed your app activities and data from the KFC platform.
+                </li>
+            </li>
+            <li>Once your account has been deleted after your approval, you will lose all the information associated with that account e.g. Addresses, Past Orders.</li>
+        </ul>
+
+    </div>
+
+    <div class="DISCLOSED">
+        <h2>WE USE INFORMATION AS DISCLOSED AND DESCRIBED HERE
+        </h2>
+        <ul>
+            <li>Our sites are meant for adults. We do not knowingly collect personally identifiable information from children under 13 without permission from a parent or guardian. If you are a parent or legal guardian and think your child under 13 has given us information, you can email us here . You can also write to us at the address listed at the end of this policy. Please mark your inquiries "COPPA Information Request."</li>
+            <li>Parents, you can also learn more about how to protect children's privacy online here .
+            </li>
+        </ul>
+    </div>
+
+    <div class="DESCRIBED HERE">
+        <h2>WE USE INFORMATION AS DISCLOSED AND DESCRIBED HERE
+        </h2>
+        <p>From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates</p>
+    </div>
+
+    </div>
+
+
+    <!-- -----------------footer------------------- -->
+    <footer class="kfc-footer">
+      
+      <div class="footer-center">
+          <img src="https://logoeps.com/wp-content/uploads/2013/03/kfc-eps-vector-logo.png" alt="kfc" class="footer-logo">
+          <div class="social-icons">
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="youtube"></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="instagram"></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook"></a>
+          </div>
+      </div>
+      <div class="footer-links">
+          <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Mitao Bhoook</a></li>
+              <li><a href="#">Mitao Bhook - Scholarship</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">careers</a></li>
+          </ul>
+          <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Store Locator</a></li>
+              <li><a href="#">Track Order</a></li>
+          </ul>
+          <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+          <div class="app-links">
+              <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="app store"></a>
+              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="google play"></a>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+          <p>2025 KFC. All rights reserved</p>
+          <div class="powered">
+            <span>Powered by</span>
+            <a href="#">mahnooriiX Technology Solutions</a>
+          </div>
+        </div>
+</footer>
+
+
+
+    
+
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>

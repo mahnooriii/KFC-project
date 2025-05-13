@@ -5,14 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KFC Pakistan</title>
     <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 
 <!-- ----------------NavBar---------------------- -->
     <nav class="navbar">
         <div class="left-section">
-            <div class="menu-icon"><img src="https://static.thenounproject.com/png/345386-200.png"  alt="menu" class="menu"></div>
-            <img href="index.html" src="https://www.pngplay.com/wp-content/uploads/9/KFC-Logo-PNG-Free-File-Download.png" alt="kfc logo" class="kfc-logo">
+<!--------- menuu sidebar ------------>
+<!-- Toggle Button -->
+<button id="openSidebar">
+ <div class="menu-icon"><img src="https://static.thenounproject.com/png/345386-200.png"  alt="menu" class="menu"></div>
+
+</button>
+
+<!-- Sidebar Overlay -->
+<div id="overlay"></div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <button class="login-button">LOGIN</button>
+
+  <!-- Day/Night Toggle -->
+  <div class="toggle-wrapper">
+    <div class="toggle">
+      <span class="day active">Day</span>
+      <span class="night">Night</span>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Icon Buttons -->
+  <!-- <div class="icon-links"> -->
+    <!-- Icon Buttons -->
+<ul class="icon-links">
+  <li><a href="#"><i class="fa-solid fa-location" style="color: #cf3a3a;"></i> Store Locator</a></li>
+  <li><a href="#"><i class="fa-solid fa-pizza-slice" style="color: #cf3a3a;"></i> Track Order</a></li>
+  <li><a href="#"><i class="fa-solid fa-person-digging" style="color: #d33636;"></i> Explore Menu</a></li>
+</ul>
+
+   
+  <!-- </div> -->
+
+  <hr />
+
+  <!-- Text Links -->
+  <ul class="nav-links">
+    <li>About Us</li>
+    <li>FeedBack</li>
+    <a href="./pages/Terms.html"><li>Terms & Conditions</li></a>
+    <a href="./pages/policy.html"><li>Privacy Policy</li></a>
+    <a href="./pages/contactUs.html"><li>Contact Us</li></a>
+    <li>Mitao Bhook</li>
+    <li>Mitao Bhook - Scholarship</li>
+    <li>Careers</li>
+  </ul>
+</div>
+
+            <!-- <div class="menu-icon"><img src="https://static.thenounproject.com/png/345386-200.png"  alt="menu" class="menu"></div> -->
+           <a href="./index.html"><img href="index.html" src="https://www.pngplay.com/wp-content/uploads/9/KFC-Logo-PNG-Free-File-Download.png" alt="kfc logo" class="kfc-logo"></a> 
        <div class="nav-buttons">
         <button class="nav-btn ">
         <img src="https://www.kfcpakistan.com/static/media/Delivery.793adbaa710baf75ba78.png" alt="Delivery" class="icon">DELIVERY
@@ -50,26 +103,36 @@
           <div class="menu-card">
               <img src="./assets/images/everyday-value.png" alt="everyday value" class="expo">
               <p>Everyday Value</p>
+              <div class="underline"></div>
           </div>
           <div class="menu-card">
               <img src="./assets/images/Ala-Carte-&-Combos.png" alt="ala carte" class="expo">
               <p>Ala-Carte-&-Combos</p>
+              <div class="underline"></div>
           </div>
           <div class="menu-card">
-              <img src="./assets/images/Promotion explore.png" alt="promotion" class="expo">
+              <img src="./assets/images/everyday-value.png" alt="promotion" class="expo">
               <p>Promotion</p>
+              <div class="underline"></div>
+
           </div>
           <div class="menu-card">
               <img src="./assets/images/Signature-Boxe.png" alt="Signature-Boxe" class="expo">
               <p>Signature-Boxe</p> 
+              <div class="underline"></div>
+
           </div>
           <div class="menu-card">
               <img src="./assets/images/Sharing explore.png" alt="Sharing" class="expo">
               <p>Sharing</p>
+              <div class="underline"></div>
+
           </div>
           <div class="menu-card">
-              <img src="./assets/images/Snack & bev.png" alt="snacks" class="expo">
+              <img src="./assets/images/Signature-Boxe.png" alt="snacks" class="expo">
               <p>Snacks-&-Beverages</p>
+              <div class="underline"></div>
+
           </div>
       </div>
   </section>
@@ -130,7 +193,10 @@
       </div>
       <div class="deal-content">
         <h3>Crispy Duo Box</h3>
-        <p>Turn up the fun with 5 pcs Hot & Crispy Chicken + 1 Large fries + 2 Regular drinks</p>
+        <div class="p">
+        <p>          
+          Turn up the fun with 5 pcs Hot & Crispy Chicken + 1 Large fries + 2 Regular drinks</p>
+       </div>
         <p class="price">Rs 1350</p>
         <button class="add-button">+ ADD TO BUCKET</button>
       </div>
@@ -144,7 +210,9 @@
       </div>
       <div class="deal-content">
         <h3>Xtreme Duo Box</h3>
+        <div class="p">
         <p>The irresistible combo of 2 Signature Zingers + 2 pcs Hot & Crispy Chicken + 1</p>
+      </div>
         <p class="price">Rs 1560</p>
         <button class="add-button">+ ADD TO BUCKET</button>
       </div>
@@ -158,7 +226,9 @@
       </div>
       <div class="deal-content">
         <h3>Value Bucket</h3>
+        <div class="p">
         <p>Our pride and joy: hand-breaded and fried to perfection in house. 9 pcs of Colonel’s</p>
+      </div>
         <p class="price">Rs 2490</p>
         <button class="add-button">+ ADD TO BUCKET</button>
       </div>
@@ -172,7 +242,9 @@
       </div>
       <div class="deal-content">
         <h3>Family Festival 3</h3>
+        <div class="p">
         <p>An ultimate meal for the fam. It includes 4 Zinger burgers + 4 pieces Hot and Crispy</p>
+      </div>
         <p class="price">Rs 2490</p>
         <button class="add-button">+ ADD TO BUCKET</button>
       </div>
@@ -246,6 +318,14 @@
                 </div>
               </div>
     </footer>
-    
+
+
+
+    <!-- -------adding javaScript------ -->
+     <script src="./assets/script.js"></script>
+
 </body>
 </html>
+
+
+
