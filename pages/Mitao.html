@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scholarship.css" type="text/css">
+</head>
+
+<body>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.img-container img {
+  height: 97%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.speech-bubble {
+  background-color: rgb(233, 7, 7);
+  color: white;
+  width: 50%;
+  margin: 80px auto;
+  padding: 70px 40px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 100px;
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top-color: #d50000;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -15px;
+}
+
+.speech-bubble h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.speech-bubble h1 span {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.content {
+  width: 90%;
+  margin: 50px auto;
+  font-size: 22px;
+  color: #000;
+  font-weight:bolder;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 0 60px;
+}
+
+.box {
+  position: relative;
+  width: 18%;
+  height: 18%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.box img {
+  width: 106%;
+  height: 106%;
+  object-fit: cover;
+}
+
+.bucket-section {
+  margin-top: 40px;
+}
+
+.bucket {
+  width: 100;
+}
+
+.apply-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #d50000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #b00000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.scholar-section {
+  background-color: #f5f7fa;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.scholar-section .header {
+  background-color: white;
+  color: black;
+  font-size: 58px;
+  font-weight: 1000;
+  padding: 60px 20px;
+  text-transform: uppercase;
+}
+
+.scholar-section .contents  {
+  max-width: 800px;
+  margin: 40px auto 0;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.scholar-section .apply-btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #d50000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.scholar-section .apply-btn:hover {
+  background-color: #b00000;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.scholarship-section {
+  background-color: #f5f7fa;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.scholarship-section .header {
+  background-color: #d50000;
+  color: black;
+  font-size: 48px;
+  font-weight: 800;
+  padding: 60px 10px;
+  text-transform: uppercase;
+}
+
+.scholarship-section .content {
+  max-width: 800px;
+  margin: 40px auto 0;
+  color: #000;
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+.scholarship-section .apply-btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #d50000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.scholarship-section .apply-btn:hover {
+  background-color: #b00000;
+}
+
+.end{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 550px;
+}
+
+</style>
+
+    <div class="img-container">
+        <img src="../assets/csr_banner.png" alt="Mitao Bhook">
+    </div>
+
+
+        <div>
+           <img src="../assets/mitaoo.png" alt="mitao banner">
+        </div>
+
+        <div class="content">
+            <p>
+                KFC PAKISTANS MITAO BHOOK PLATFORM IS PROVIDING 120+ HIGHER <br />
+                EDUCATION SCHOLARSHIPS TO DESERVING STUDENTS ACROSS ALL HEC <br />
+                RECOGNISED INSTITUTES IN PAKISTAN. THIS IS DONE IN COLLABORATION WITH <br />
+                THE ORANGE TREE FOUNDATION, AN EDUCATION ADVOCATE WORKING TO <br />
+                FURTHER EDUCATION IN THE COUNTRY.
+            </p>
+            <br>
+            <br>
+            <br>
+            <p>
+                HIGHER EDUCATION GIVES YOU, THE PAKISTANI YOUTH, AN OPPORTUNITY TO<br />
+                SUCCEED IN TODAY'S GLOBAL ECONOMY AND KFC PAKISTAN IS EXCITED TO<br />
+                ENABLED THE DREAMS OF HUNDREDS OF PAKISTANI SCHOLARS EMBARKING ON<br />
+                THIS JOURNEY.
+            </p>
+        </div>
+        <div class="top-section">
+            <div class="box">
+                <img src="../assets/education.png" alt="Education" />
+            </div>
+            <div class="box">
+                <img src="../assets/diversity.png" alt="Diversity" />
+            </div>
+            <div class="box">
+                <img src="../assets/diversity.png" alt="Inclusion" />
+            </div>
+        </div>
+
+        <div class="bucket-section">
+            <img src="../assets/bucket_img.png" alt="KFC Bucket" class="bucket" />
+            <button class="apply-btn">Apply Now</button>
+        </div>
+        <br>
+
+          <section class="scholar-section">
+            <div class="header">
+                ELIGIBLITY CRITERIA
+            </div>
+
+            
+            <div class="contents">
+
+                        <p><h2><strong>Applicant must be a resident of Pakistan.</strong></p>
+                
+                        <p><strong>Students need securing admission at institution  as per admission policy and be enrolled in undergraduate (4
+                                    years) programs.
+                                   </strong></p>
+    
+                        <p><strong>Students in financial need who are already enrolled in participating institutions are also eligible to apply.</strong></p>
+                           
+                        <p><strong>Students in financial need who are already enrolled in participating institutions are  also eligible to apply.</strong></p>
+                          
+                        <button class="apply-btn">Apply Now</button>
+            </div>
+        </section>
+<br>
+        <section class="scholarship-section">
+            <div class="header">
+                FIELDS SUPPORTED FOR THE SCHOLARSHIP
+            </div>
+            <div class="content">
+                <p><strong>Business, Engineering, Medical, IT, Mathematics, Physical Sciences, Education and
+                        More</strong></p>
+
+
+
+                <p><strong>Please note</strong>
+                <p><strong>scholarships are provided yearly and renewal for existing students
+                        will be contingent on the academic committee’s discretion every year.</strong></p>
+
+                <p><strong>Complete policy document available here.</strong></p>
+
+                <img class="end" src="../assets/end.png" alt="">
+
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </section>
+
+
+      
+
+
+    </body>
+
+    </html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Careers</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 30px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+  
+     .video{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 230px;
+        
+     }
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.section-title i {
+  margin-right: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: none;
+  background-color: #c2c2c2;
+  color: #000;
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(22%) sepia(99%) saturate(7450%) hue-rotate(340deg) brightness(98%) contrast(119%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fc;
+  color: #000;
+}
+
+.values-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.values-section h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.value-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.value-box h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 16px 12px 8px;
+}
+
+.value-box p {
+  font-size: 0.95rem;
+  margin: 0 12px;
+  line-height: 1.4;
+}
+
+
+
+
+
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 30px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Section Headings */
+.section-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 30px 0 15px;
+}
+
+.section-title i {
+  margin-right: 10px;
+}
+
+/* Form Grid Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Each Field */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+/* Inputs */
+.form-group input {
+  padding: 12px;
+  border: none;
+  background-color: #c2c2c2;
+  color: #000;
+  border-bottom: 2px solid black;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+/* Date Picker Icon (if added later) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(22%) sepia(99%) saturate(7450%) hue-rotate(340deg) brightness(98%) contrast(119%);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 40px;
+}
+
+.agreement-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.agreement-container h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.agreement-container p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #222;
+}
+
+.agreement-container p strong {
+  color: #000;
+}
+
+.checkbox-row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: #e30052; /* Bright red/pink */
+}
+
+.button-row {
+  margin-top: 40px;
+  text-align: center;
+ 
+}
+
+.button-row button {
+  background-color: #e79ba9;
+  border: none;
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-row button:hover {
+  background-color: #d16478;
+}
+
+    </style>
+   
+   <video class="video" width="950" height="500" controls>
+    <source src="../assets/kfc_video.mp4" type="video/mp4">
+</video>
+
+
+
+ <section class="values-section">
+    <h1>Our Values</h1>
+    <div class="values-grid">
+      <div class="value-box">
+        <img src="../assets/believe.jpg" alt="Believe in All People" />
+        <h2>Believe in All People</h2>
+        <p>We trust each other and believe everyone can be their best self here. Our generous nature shines through everything we do.</p>
+      </div>
+      <div class="value-box">
+        <img src="../assets/thank.jpeg" alt="Recognize" />
+        <h2>Recognize</h2>
+        <p>We look for ways to recognize our people for their courage and celebrate all achievements – big and small. We never forget to have fun doing it!</p>
+      </div>
+      <div class="value-box">
+        <img src="../assets/rest.jpg" alt="Run Great Restaurants" >
+        <h2>Run Great Restaurants</h2>
+        <p>We are passionate about our food and take pride in creating a great experience for our guests. We do things the right way, even when no one is looking.</p>
+      </div>
+      <div class="value-box">
+        <img src="../assets/run.webp" alt="Go for Breakthrough" />
+        <h2>Go for Breakthrough</h2>
+        <p>We always strive to do and be our best. We work with a sense of urgency and ownership in our brand. We take smart risks to achieve amazing results!</p>
+      </div>
+      <div class="value-box">
+        <img src="../assets/how.jpg" alt="Build Know How" />
+        <h2>Build Know How</h2>
+        <p>We always seek to learn more and share our know how with others. Everyone can grow here.</p>
+      </div>
+      <div class="value-box">
+        <img src="../assets/teamwork.webp" alt="Work as a Team" />
+        <h2>Work as a Team</h2>
+        <p>We help and support each other to grow and achieve more. We benefit from healthy debate to get the best outcomes. We win together as the KFC family!</p>
+      </div>
+    </div>
+  </section>
+
+
+    <div class="container">
+        <h1>Careers</h1>
+
+        <div class="section-title">
+            <i class="fas fa-user"></i>
+            <span>Personnel Info</span>
+        </div>
+
+        <form class="form-grid">
+            <!-- Row 1 -->
+            <div class="form-group">
+                <label>FULL NAME *</label>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label>Date of Birth *</label>
+                <input type="date">
+            </div>
+
+            <!-- Row 2 -->
+            <div class="form-group">
+                <label>Country of Birth *</label>
+                <input type="text" placeholder="Country of Birth">
+            </div>
+            <div class="form-group">
+                <label>City of Birth *</label>
+                <input type="text" placeholder="City of Birth">
+            </div>
+
+            <!-- Row 3 -->
+            <div class="form-group">
+                <label>CNIC *</label>
+                <input type="text" placeholder="CNIC">
+            </div>
+            <div class="form-group">
+                <label>CNIC Expiry Date *</label>
+                <input type="date">
+            </div>
+
+            <!-- Row 4 -->
+            <div class="form-group">
+                <label>Marital Status *</label>
+                <select>
+                    <option value="">Select</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender *</label>
+                <select>
+                    <option value="">Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="form-group">
+                <label>Religion *</label>
+                <input type="text" placeholder="Religion">
+            </div>
+            <div class="form-group">
+                <label>Disability *</label>
+                <input type="text" placeholder="Disability">
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <!-- Address Section -->
+        <div class="section-title">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Address</span>
+        </div>
+
+        <form class="form-grid">
+            <div class="form-group">
+                <label>Phone Number (3XXXXXXXXX)*</label>
+                <input type="text" placeholder="+92">
+            </div>
+            <div class="form-group">
+                <label>Address *</label>
+                <input type="text" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <label>Country *</label>
+                <input type="text" placeholder="Country">
+            </div>
+            <div class="form-group">
+                <label>State/Province *</label>
+                <input type="text" placeholder="State or Province">
+            </div>
+            <div class="form-group">
+                <label>City *</label>
+                <input type="text" placeholder="City">
+            </div>
+        </form>
+
+        <!-- Job Posting Section -->
+        <div class="section-title">
+            <i class="fas fa-briefcase"></i>
+            <span>Job Posting</span>
+        </div>
+
+        <form class="form-grid">
+            <div class="form-group">
+                <label>How were you referred to us? *</label>
+                <input type="text" placeholder="e.g., Friend, Social Media">
+            </div>
+            <div class="form-group">
+                <label>City Applying For *</label>
+                <input type="text" placeholder="Enter city name">
+            </div>
+            <div class="form-group">
+                <label>Position You are Applying For *</label>
+                <input type="text" placeholder="e.g., Sales Associate">
+            </div>
+            <div class="form-group">
+                <label>Type of Shift (Only for instore) *</label>
+                <input type="text" placeholder="Full-time / Part-time">
+            </div>
+            <div class="form-group">
+                <label>Type of Employment (Only for instore) *</label>
+                <input type="text" placeholder="Permanent / Temporary">
+            </div>
+        </form>
+    </div>
+<!-- Agreement Section -->
+
+    <div class="agreement-container">
+        <h2>Applicant agreement</h2>
+
+        <p>
+            I certify that all information provided in this application is true and complete. I understand that any
+            false information or omission may disqualify me from further consideration for employment and may result in
+            my dismissal If discovered at a later date. I authorize and agree to cooperate in a thorough investigation
+            of all statements made herein and other matters relating to my background and qualification. I understand
+            that any investigation conducted may include a request for employment, educational and criminal history. I
+            authorize any person, school, current and former employer, consumer reporting agency and any other
+            organization or agency to provide information relevant to such investigation and I hereby release all
+            persons and corporations requesting or supplying information pursuant to such investigation from all
+            liability or responsibility to me for doing so. I understand that I have the right to make a written request
+            within a reasonable period of time for complete disclosure of the nature and scope of any investigation. I
+            further authorize any physician or hospital to release any information which may be necessary to determine
+            my ability to perform the job for which I am being considered or any future job in the event that I am
+            hired. I UNDERSTAND THAT THIS APPLICATION OR SUBSEQUENT EMPLOYMENT DOES NOT CREATE A CONTRACT OF EMPLOYMENT NOR
+            GUARANTEE EMPLOYMENT FOR ANY DEFINITE PERIOD OF TIME.
+        </p>
+
+        <div class="checkbox-row">
+            <input type="checkbox" id="signup">
+            <label for="signup">Sign up now to avail exclusive rewards & discounts</label>
+        </div>
+
+        <div class="button-row">
+            <button type="submit">APPLY</button>
+        </div>
+    </div>
+</body>
+
+</html>

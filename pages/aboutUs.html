@@ -15,16 +15,16 @@
       <title>KFC About Section</title>
       <style>
         body {
-          margin: 0;
+          margin: 0;  
           font-family: Arial, sans-serif;
-          background-color: #f3f5f9;
+          background-color: white;
         }
     
         .section {
-          background-color: white;
+          background-color:#f3f5f9;
           margin: 40px auto;
           max-width: 1200px;
-          padding: 30px;
+          padding: 20px;
           box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
     
@@ -40,6 +40,11 @@
           font-size: 16px;
           color: #000;
         }
+        .top-text p{
+          font-size: 14px;
+          line-height: 1.6;
+
+        }
     
         .highlight-box {
           flex: 1 1 35%;
@@ -53,6 +58,9 @@
           padding: 20px;
           min-height: 120px;
         }
+        .highlight-box p{
+          font-size: 14px;
+        }
     
         .history-section {
           display: flex;
@@ -61,12 +69,11 @@
           gap: 30px;
         }
     
-        .history-img {
-          flex: 1 1 45%;
-        }
+        
     
         .history-img img {
-          width: 100%;
+          width: 500px;
+          height: 300px;
           border-radius: 10px;
         }
     
@@ -80,9 +87,67 @@
         }
     
         .history-text p {
-          font-size: 16px;
+          font-size: 14px;
           line-height: 1.6;
         }
+        
+
+      .card-container {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      max-width: 600px;
+      align-items: center;
+      position: relative;
+      left: 40px;
+  
+    }
+
+    .card {
+      padding: 20px;
+      background-color: white;
+      padding: 20px;
+      width: 500px;
+      border-radius: 2px;
+      box-shadow:  1px 1px 9px rgba(0,0,0,0.1);
+      text-align: center;}
+
+      .card img{
+        width: 100px;
+        height: 100px;
+      }
+      .card p{
+        font-size: 12px;
+      }
+      .Best-chicken img{
+        width: 100%;
+        height: auto;
+      }
+      .Best-chicken h3{
+         font-weight: bold;
+         padding-top:40px ;
+      }
+
+      .Facts img{
+        width: 100%;
+      }
+
+      .bhook{
+        text-align: center;
+        background-color: white;
+        padding-top: 30px;
+      }
+      .bhook img{
+        width: 30%;
+        height: 30%;
+      }
+      .bhook p{ 
+        font-size: 12px;
+        padding: 40px ;
+      }
+
+    
       </style>
     </head>
     <body>
@@ -99,14 +164,14 @@
             </p>
           </div>
           <div class="highlight-box">
-            WE PRIDE OURSELVES ON USING QUALITY HALAL CHICKEN AND<br>
-            LOCAL INGREDIENTS FROM TRUSTED SUPPLIERS
+           <p> WE PRIDE OURSELVES ON USING QUALITY HALAL CHICKEN AND<br>
+            LOCAL INGREDIENTS FROM TRUSTED SUPPLIERS</p>
           </div>
-        </div>
+        
     
         <div class="history-section">
           <div class="history-img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Colonel_Sanders_in_Japan.jpg/640px-Colonel_Sanders_in_Japan.jpg" alt="Colonel Sanders"/>
+            <img src="https://www.kfcpakistan.com/static/media/history-img.599c12141403abf0beb5.png" alt="Colonel Sanders"/>
           </div>
           <div class="history-text">
             <h2>History</h2>
@@ -118,6 +183,41 @@
               sharing his love for chicken with the world!
             </p>
           </div>
+        </div>
+        </div>
+        
+        <div class="Best-chicken">
+          <h3>The Story of World’s Best Chicken</h3>
+          <img src="../assets/buck.png" alt="">
+        </div>
+
+        <div class="Facts">
+          <h3>Fast Facts about KFC Pakistan</h3>
+          <img src="../assets/facts.png" alt="">
+        </div>
+
+        <div class="bhook">
+          <img src="../assets/mitaobhook.png" alt="">
+          <p>is KFC’s pledge to give back to society. Over the years we have made it our mission to spread the message of hope, bringing positive change in the lives of people and providing better living standards. Mitao Bhook strengthens the community on the pillars of Education, Inclusion & Diversity.</p>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+      <img src="../assets/lea.jpg" alt="Explore Menu" class="explore"/>
+      <p>Adopted 6 TCF schools since 2014 in Gadaap West, Muzaffargarh, Faisalabad, and Quetta, educating 1700+ students</p>
+    </div>
+          <div class="card">
+      <img src="../assets/deaf.png" alt="Explore Menu" class="explore"/>
+      <p>Proudly running the Deaf Reach KFC Campus and providing education and training to 340 deaf students</p>
+    </div>
+          <div class="card">
+      <img src="../assets/orange.png" alt="Explore Menu" class="explore"/>
+      <p>Sponsoring higher education of 200+ students across HEC recognized universities in Pakistan</p>
+    </div>
+          <div class="card">
+      <img src="../assets/tegc.png" alt="Explore Menu" class="explore"/>
+      <p> Supporting TEGS – KFC Campus to provide quality education to students in Lahore</p>
+    </div>
         </div>
       </div>
     

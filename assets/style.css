@@ -388,7 +388,7 @@ hr {
   background: #e4002b;
   color: white;
   padding: 5px 15px;
-  font-weight: bold;
+  font-weight: bold; 
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0% 50%);
 }
 
@@ -722,7 +722,7 @@ padding: 0 20px;
 }
 .btn-expo{
   position: absolute;
-  padding-bottom: ;
+  /* padding-bottom: ; */
 }
 
 
